@@ -1,0 +1,26 @@
+{
+    "name": "izongchao\/gweather",
+    "description": "xuzongchao create weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xuzongchao",
+            "email": "zchao0723@126.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Izongchao\\Gweather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Izongchao\\Gweather\\ServiceProvider"
+            ]
+        }
+    }
+}
