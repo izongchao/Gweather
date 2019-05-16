@@ -11,10 +11,21 @@
 
 namespace Izongchao\Gweather;
 
+/**
+ * Class ServiceProvider
+ *
+ * @package Izongchao\Gweather
+ */
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
+    /**
+     * @var bool
+     */
     protected $defer = true;
 
+    /**
+     * register
+     */
     public function register()
     {
         $this->app->singleton(Weather::class, function () {
@@ -24,6 +35,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->app->alias(Weather::class, 'weather');
     }
 
+    /**
+     * provides
+     *
+     * @return array
+     */
     public function provides()
     {
         return [Weather::class, 'weather'];

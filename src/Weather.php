@@ -16,22 +16,44 @@ use Izongchao\Gweather\Exceptions\HttpException;
 use Izongchao\Gweather\Exceptions\InvalidArgumentException;
 
 /**
- * Created by PhpStorm.
- * User: xuzongchao
- * Date: 2019/5/15
- * Time: 下午3:34.
+ * Class Weather
+ *
+ * @package Izongchao\Gweather
  */
 class Weather
 {
+    /**
+     * @var string
+     */
     protected $key;
 
+    /**
+     * @var array
+     */
     protected $guzzleOptions = [];
 
+    /**
+     * Weather constructor.
+     *
+     * @param $key
+     */
     public function __construct($key)
     {
         $this->key = $key;
     }
 
+    /**
+     * Get weather
+     *
+     * @param $city
+     * @param string $type
+     * @param string $format
+     *
+     * @return mixed
+     *
+     * @throws HttpException
+     * @throws InvalidArgumentException
+     */
     public function getWeather($city, $type = 'base', $format = 'json')
     {
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
@@ -62,11 +84,51 @@ class Weather
         }
     }
 
+    /**
+     * Get live weather
+     *
+     * @param $city
+     * @param string $format
+     *
+     * @return mixed
+     *
+     * @throws HttpException
+     * @throws InvalidArgumentException
+     */
+    public function getLiveWeather($city, $format = 'json')
+    {
+        return $this->getWeather($city, 'base', $format);
+    }
+
+    /**
+     * Get forecasts weather
+     *
+     * @param $city
+     * @param string $format
+     *
+     * @return mixed
+     *
+     * @throws HttpException
+     * @throws InvalidArgumentException
+     */
+    public function getForecastsWeather($city, $format = 'json')
+    {
+        return $this->getWeather($city, 'all', $format);
+    }
+
+    /**
+     * @return Client
+     */
     public function getHttpClient()
     {
         return new Client($this->guzzleOptions);
     }
 
+    /**
+     * Set GuzzleOptions
+     *
+     * @param array $options
+     */
     public function setGuzzleOptions(array $options)
     {
         $this->guzzleOptions = $options;

@@ -11,6 +11,11 @@
 
 namespace Izongchao\Gweather\Exceptions;
 
+/**
+ * Class Exception
+ *
+ * @package Izongchao\Gweather\Exceptions
+ */
 class Exception extends \Exception
 {
 }

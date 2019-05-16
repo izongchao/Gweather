@@ -11,6 +11,11 @@
 
 namespace Izongchao\Gweather\Exceptions;
 
+/**
+ * Class HttpException
+ *
+ * @package Izongchao\Gweather\Exceptions
+ */
 class HttpException extends Exception
 {
 }
