@@ -3,7 +3,7 @@
 <p align="center"> xuzongchao create weather SDK.</p>
 
 [![Build Status](https://travis-ci.org/izongchao/gweather.svg?branch=master)](https://travis-ci.org/izongchao/gweather)
-
+![StyleCI build status](https://github.styleci.io/repos/186780490/shield) 
 ## Installing
 
 ```shell
