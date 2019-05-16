@@ -2,6 +2,7 @@
 
 <p align="center"> xuzongchao create weather SDK.</p>
 
+[![Build Status](https://travis-ci.org/izongchao/gweather.svg?branch=master)](https://travis-ci.org/izongchao/gweather)
 
 ## Installing
 
