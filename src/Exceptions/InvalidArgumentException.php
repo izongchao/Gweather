@@ -12,9 +12,7 @@
 namespace Izongchao\Gweather\Exceptions;
 
 /**
- * Class InvalidArgumentException
- * 
- * @package Izongchao\Gweather\Exceptions
+ * Class InvalidArgumentException.
  */
 class InvalidArgumentException extends Exception
 {
