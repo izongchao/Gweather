@@ -3,7 +3,10 @@
 <p align="center"> xuzongchao create weather SDK.</p>
 
 [![Build Status](https://travis-ci.org/izongchao/gweather.svg?branch=master)](https://travis-ci.org/izongchao/gweather)
+[![Latest Stable Version](https://poser.pugx.org/izongchao/gweather/v/stable)](https://packagist.org/packages/izongchao/gweather)
+[![Total Downloads](https://poser.pugx.org/izongchao/gweather/downloads)](https://packagist.org/packages/izongchao/gweather)
 ![StyleCI build status](https://github.styleci.io/repos/186780490/shield) 
+[![License](https://poser.pugx.org/izongchao/gweather/license)](https://packagist.org/packages/izongchao/gweather)
 ## Installing
 
 ```shell
