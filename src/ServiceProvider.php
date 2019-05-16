@@ -12,9 +12,7 @@
 namespace Izongchao\Gweather;
 
 /**
- * Class ServiceProvider
- *
- * @package Izongchao\Gweather
+ * Class ServiceProvider.
  */
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -24,7 +22,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     protected $defer = true;
 
     /**
-     * register
+     * register.
      */
     public function register()
     {
@@ -36,7 +34,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     }
 
     /**
-     * provides
+     * provides.
      *
      * @return array
      */

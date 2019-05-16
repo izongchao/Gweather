@@ -16,9 +16,7 @@ use Izongchao\Gweather\Exceptions\HttpException;
 use Izongchao\Gweather\Exceptions\InvalidArgumentException;
 
 /**
- * Class Weather
- *
- * @package Izongchao\Gweather
+ * Class Weather.
  */
 class Weather
 {
@@ -43,7 +41,7 @@ class Weather
     }
 
     /**
-     * Get weather
+     * Get weather.
      *
      * @param $city
      * @param string $type
@@ -85,7 +83,7 @@ class Weather
     }
 
     /**
-     * Get live weather
+     * Get live weather.
      *
      * @param $city
      * @param string $format
@@ -101,7 +99,7 @@ class Weather
     }
 
     /**
-     * Get forecasts weather
+     * Get forecasts weather.
      *
      * @param $city
      * @param string $format
@@ -125,7 +123,7 @@ class Weather
     }
 
     /**
-     * Set GuzzleOptions
+     * Set GuzzleOptions.
      *
      * @param array $options
      */
