@@ -1,13 +1,13 @@
 <h1 align="center">Weather</h1>
 
 <p align="center">:rainbow: 基于高德开放平台的 PHP 天气信息组件。</p>
-<p align="center">
+
 [![Build Status](https://travis-ci.org/izongchao/gweather.svg?branch=master)](https://travis-ci.org/izongchao/gweather)
 [![Latest Stable Version](https://poser.pugx.org/izongchao/gweather/v/stable)](https://packagist.org/packages/izongchao/gweather)
 [![Total Downloads](https://poser.pugx.org/izongchao/gweather/downloads)](https://packagist.org/packages/izongchao/gweather)
 ![StyleCI build status](https://github.styleci.io/repos/186780490/shield) 
 [![License](https://poser.pugx.org/izongchao/gweather/license)](https://packagist.org/packages/izongchao/gweather)
-</p>
+
 ## 安装
 
 ```sh
