@@ -76,7 +76,7 @@ class Weather
             throw new InvalidArgumentException('Invalid response format: ' . $format);
         }
 
-        if (!in_array(\strtolower($format), self::$types)) {
+        if (!in_array(\strtolower($type), self::$types)) {
             throw new InvalidArgumentException('Invalid type value(base/all): ' . $type);
         }
 
