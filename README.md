@@ -61,7 +61,7 @@ $response = $weather->getLiveWeather('合肥');
 ### 获取近期天气预报
 
 ```
-$response = $weather->getForecastsWeather('深圳');
+$response = $weather->getForecastsWeather('合肥');
 ```
 示例：
 
