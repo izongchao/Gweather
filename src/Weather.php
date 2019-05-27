@@ -27,7 +27,7 @@ class Weather
      */
     protected static $types = [
         'base',
-        'all'
+        'all',
     ];
 
     /**
@@ -35,7 +35,7 @@ class Weather
      */
     protected static $formats = [
         'json',
-        'xml'
+        'xml',
     ];
 
     /**
@@ -73,11 +73,11 @@ class Weather
     public function getWeather($city, $type = 'base', $format = 'json')
     {
         if (!in_array(\strtolower($format), self::$formats)) {
-            throw new InvalidArgumentException('Invalid response format: ' . $format);
+            throw new InvalidArgumentException('Invalid response format: '.$format);
         }
 
         if (!in_array(\strtolower($format), self::$types)) {
-            throw new InvalidArgumentException('Invalid type value(base/all): ' . $type);
+            throw new InvalidArgumentException('Invalid type value(base/all): '.$type);
         }
 
         $query = array_filter([
