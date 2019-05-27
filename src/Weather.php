@@ -23,6 +23,22 @@ class Weather
     const WEATHER_URL = 'https://restapi.amap.com/v3/weather/weatherInfo';
 
     /**
+     * @var array
+     */
+    protected static $types = [
+        'base',
+        'all'
+    ];
+
+    /**
+     * @var array
+     */
+    protected static $formats = [
+        'json',
+        'xml'
+    ];
+
+    /**
      * @var string
      */
     protected $key;
@@ -56,12 +72,12 @@ class Weather
      */
     public function getWeather($city, $type = 'base', $format = 'json')
     {
-        if (!\in_array(\strtolower($format), ['xml', 'json'])) {
-            throw new InvalidArgumentException('Invalid response format: '.$format);
+        if (!in_array($format, self::$formats)) {
+            throw new InvalidArgumentException('Invalid response format: ' . $format);
         }
 
-        if (!\in_array(\strtolower($type), ['base', 'all'])) {
-            throw new InvalidArgumentException('Invalid type value(base/all): '.$type);
+        if (!in_array($type, self::$types)) {
+            throw new InvalidArgumentException('Invalid type value(base/all): ' . $type);
         }
 
         $query = array_filter([
