@@ -77,7 +77,7 @@ class Weather
         }
 
         if (!in_array(\strtolower($type), self::$types)) {
-            throw new InvalidArgumentException('Invalid type value(base/all): ' . $type);
+            throw new InvalidArgumentException('Invalid type value(base/all): '.$type);
         }
 
         $query = array_filter([
