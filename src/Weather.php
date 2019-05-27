@@ -72,11 +72,11 @@ class Weather
      */
     public function getWeather($city, $type = 'base', $format = 'json')
     {
-        if (!in_array($format, self::$formats)) {
+        if (!in_array(\strtolower($format), self::$formats)) {
             throw new InvalidArgumentException('Invalid response format: ' . $format);
         }
 
-        if (!in_array($type, self::$types)) {
+        if (!in_array(\strtolower($format), self::$types)) {
             throw new InvalidArgumentException('Invalid type value(base/all): ' . $type);
         }
 
